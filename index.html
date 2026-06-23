@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendang Gallery - Kuliner Padang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tooplate-winter-gallery.css">
+<!--
+
+Seblak Street Gallery
+
+Custom Indonesian food theme
+
+-->
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2v20M2 12h20M6 6l12 12M6 18L18 6"/>
+                    <circle cx="12" cy="12" r="2"/>
+                    <circle cx="12" cy="2" r="1.5"/>
+                    <circle cx="12" cy="22" r="1.5"/>
+                    <circle cx="2" cy="12" r="1.5"/>
+                    <circle cx="22" cy="12" r="1.5"/>
+                    <circle cx="6" cy="6" r="1.5"/>
+                    <circle cx="18" cy="18" r="1.5"/>
+                    <circle cx="6" cy="18" r="1.5"/>
+                    <circle cx="18" cy="6" r="1.5"/>
+                </svg>
+                RENDANG
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="rendang-theme.html">Rendang</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-bg"></div>
+        <div class="hero-bg"></div>
+            <div class="hero-content">
+            <h1>Rendang Gallery</h1>
+            <p>Kekayaan rasa dari Minangkabau — Rendang asli Padang</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-container">
+            <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="classic">Rendang Klasik</button>
+            <button class="filter-btn" data-filter="dendeng">Rendang Dendeng</button>
+            <button class="filter-btn" data-filter="paru">Rendang Paru</button>
+            <button class="filter-btn" data-filter="spicy">Extra Pedas</button>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-container" id="gallery">
+        <div class="gallery-grid" id="galleryGrid">
+            <div class="gallery-item" data-category="classic">
+                <img src="images/5efaf91e0ec2c.jpg" alt="Rendang Padang">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Rendang Padang</h3>
+                    <p class="gallery-category">Padang</p>
+                </div>
+            </div>
+            <!-- Rendang gallery items -->
+            <div class="gallery-item tall" data-category="classic">
+                <a href="rendang-theme.html" class="gallery-link" target="_blank" rel="noopener">
+                    <img src="images/711dcbdb-4451-409d-b916-ed525bc23954.jpg" alt="Rendang Klasik">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Rendang Klasik</h3>
+                        <p class="gallery-category">Rendang Klasik</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery-item" data-category="dendeng">
+                <img src="images/download.jpg" alt="Rendang Dendeng">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Rendang Dendeng</h3>
+                    <p class="gallery-category">Dendeng</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="paru">
+                <img src="images/e579eccfb7d8708e690ded4cc95472e1.jpg" alt="Rendang Paru">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Rendang Paru</h3>
+                    <p class="gallery-category">Paru</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="classic">
+                <img src="images/IMG_20230119_173726.jpg" alt="Rendang Komplit">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Rendang Komplit</h3>
+                    <p class="gallery-category">Klasik</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="spicy">
+                <img src="images/rendang.svg" alt="Rendang Pedas">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Rendang Extra Pedas</h3>
+                    <p class="gallery-category">Extra Pedas</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="dendeng">
+                <img src="images/ren_Artboard_4_202503241132351742790755_crop.webp" alt="Rendang Sereh">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Rendang Sereh</h3>
+                    <p class="gallery-category">Dendeng</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="paru">
+                <img src="images/Resep-Rendang-Daging-Sapi-Untuk-Lebaran-Gurih-dan-Nikmat.jpg" alt="Rendang Laut">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Rendang Laut (Seafood Rendang)</h3>
+                    <p class="gallery-category">Seafood</p>
+                </div>
+            </div>
+
+            <div class="gallery-item tall" data-category="classic">
+                <img src="images/resep_rendang_padang.jpg" alt="Rendang Jalanan">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Rendang Jalanan</h3>
+                    <p class="gallery-category">Klasik</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="spicy">
+                <img src="images/5efaf91e0ec2c.jpg" alt="Rendang Cabe">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Rendang Cabe Merah</h3>
+                    <p class="gallery-category">Extra Pedas</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="dendeng">
+                <img src="images/711dcbdb-4451-409d-b916-ed525bc23954.jpg" alt="Rendang Krim">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Rendang Krim</h3>
+                    <p class="gallery-category">Klasik</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="paru">
+                <img src="images/download.jpg" alt="Rendang Udang">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Rendang Udang</h3>
+                    <p class="gallery-category">Seafood</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="closeLightbox">×</button>
+        <button class="lightbox-nav lightbox-prev" id="prevImage">‹</button>
+        <button class="lightbox-nav lightbox-next" id="nextImage">›</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxCategory"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <h2>Tentang Rendang</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Rendang adalah warisan kuliner Minangkabau dari Sumatera Barat: daging dimasak lama dengan santan dan campuran rempah yang kaya hingga menghasilkan citarasa intens dan tahan lama.</p>
+                <p>Di galeri ini, kami menampilkan berbagai variasi rendang — dari rendang daging sapi klasik, rendang paru, hingga variasi seafood dan dendeng. Setiap gambar menunjukkan kehangatan rempah dan teknik masak tradisional.</p>
+                <p>Rendang bukan sekadar makanan; ia adalah bagian dari tradisi, upacara, dan kebanggaan kuliner Indonesia.</p>
+            </div>
+            <div>
+                <div class="about-image">
+                    <img src="images/rendang.svg" alt="Rendang Padang">
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Variasi Rendang</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Cita Rasa Otentik</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2>Pesan Rendang</h2>
+        <p>Hubungi kami untuk memesan rendang Padang otentik dan nikmati kelezatannya.</p>
+        
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Kirim Pesan</button>
+        </form>
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <span>📧</span>
+                <a href="mailto:rendang@gmail.com">rendang@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <span>📱</span>
+                <a href="tel:+6282128678883">+62 821 2867 883</a>
+            </div>
+            <div class="contact-item">
+                <span>📍</span>
+                <a href="https://www.google.com/maps/search/?api=1&query=Bandung+Indonesia" target="_blank">Bandung, Indonesia</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Rendang Gallery • Kuliner Padang</p>
+    </footer>
+<script src="tooplate-winter-scripts.js"></script>
+</body>
+</html>
